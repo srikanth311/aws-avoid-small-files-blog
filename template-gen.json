@@ -1,0 +1,86 @@
+{
+    "processedDate": "2018/10/30 19:05:19",
+    "currentDate":"2018/10/30 19:05:07",
+    "hashDeviceId":"0c2745e4-c2d6-4d43-8339-9c2401e80e92",
+    "deviceId":"94581b5f-a117-484a-8e3c-4fcc2dbd53b7",
+
+    "accelerometerSensorList": [
+        {
+            "accelerometer_Y": 8,
+            "gravitySensor_X": 5,
+            "accelerometer_X": 9,
+            "gravitySensor_Z": 4,
+            "accelerometer_Z": 1,
+            "gravitySensor_Y": 5,
+            "linearAccelerationSensor_Z": 3,
+            "linearAccelerationSensor_Y": 9,
+            "linearAccelerationSensor_X": 9
+        },
+        {
+            "accelerometer_Y": 1,
+            "gravitySensor_X": 3,
+            "accelerometer_X": 5,
+            "gravitySensor_Z": 5,
+            "accelerometer_Z": 7,
+            "gravitySensor_Y": 9,
+            "linearAccelerationSensor_Z": 6,
+            "linearAccelerationSensor_Y": 5,
+            "linearAccelerationSensor_X": 3
+        }
+    ],
+    "tempSensorList":[
+        {
+            "kelvin":585.4928040286752,
+            "celsius":43.329574923775425,
+            "fahrenheit":50.13864584530086
+        },
+        {
+            "kelvin":349.95625855125814,
+            "celsius":95.68423052685313,
+            "fahrenheit":7.854854574219985
+        }
+    ],
+    "illuminancesSensorList":[
+        {
+            "illuminance":44.65135784368194
+        },
+        {
+            "illuminance":98.15404017082403
+        }
+    ],
+  "gpsSensorList":[
+    {
+      "altitude":4.38273213294682,
+      "heading":7.416314616289915,
+      "latitude":5.759723677991661,
+      "longitude":1.4732885894731842
+    },
+    {
+      "altitude":9.816473807569487,
+      "heading":5.118919157684835,
+      "latitude":3.581361614110458,
+      "longitude":1.3699272610616127
+    }
+
+  ],
+  "testAdditonalDataList": [
+    {
+      "dimesnion_X": 9,
+      "dimesnion_Y": 2,
+      "dimesnion_Z": 2
+    },
+    {
+      "dimesnion_X": 3,
+      "dimesnion_Y": 10,
+      "dimesnion_Z": 5
+    }
+    {
+      …
+    },
+    {
+      …
+    },
+    :
+    :
+  ]
+}
