@@ -7,11 +7,11 @@
       "Type": "String"
     },
     "Region": {
-      "Description": "AWS Region - Select us-west-2 by default.",
+      "Description": "AWS Region - Select us-east-1 by default.",
       "Type": "String",
-      "Default": "us-west-2",
+      "Default": "us-east-1",
       "AllowedValues": [
-        "us-west-2"
+        "us-east-1"
       ]
     },
     "KinesisStreamName": {
@@ -40,9 +40,9 @@
       "DependsOn": "BaseKinesisStream",
       "Properties": {
         "Code": {
-          "S3Bucket": "skkodali-proserv-us-west-2",
+          "S3Bucket": "aws-bigdata-blog",
           "S3Key": {
-            "Fn::Sub": "avoid-small-files-blog/appjars/kinesis-lambda-1.0-SNAPSHOT-jar-with-dependencies.jar"
+            "Fn::Sub": "artifacts/aws-blog-avoid-small-files/appjars/kinesis-lambda-1.0-SNAPSHOT-jar-with-dependencies.jar"
           }
         },
         "Description": "AWS BLOGS - Processing Incoming Kinesis Records",

@@ -23,11 +23,11 @@
       ]
     },
     "Region": {
-      "Description": "AWS Region - Select us-west-2 by default.",
+      "Description": "AWS Region - Select us-east-1 by default.",
       "Type": "String",
-      "Default": "us-west-2",
+      "Default": "us-east-1",
       "AllowedValues": [
-        "us-west-2"
+        "us-east-1"
       ]
     },
     "EMRClusterName": {
@@ -63,7 +63,7 @@
       "Type": "AWS::CloudFormation::Stack",
       "Properties": {
         "TemplateURL": {
-          "Fn::Sub": "https://s3-us-west-2.amazonaws.com/skkodali-proserv-us-west-2/avoid-small-files-blog/cloudformation-templates/step1_vpc.template"
+          "Fn::Sub": "https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-blog-avoid-small-files/cloudformation-templates/step1_vpc.template"
         },
         "Parameters": {
           "S3BucketName": {
@@ -77,7 +77,7 @@
       "DependsOn":"STEP1",
       "Properties": {
         "TemplateURL": {
-          "Fn::Sub": "https://s3-us-west-2.amazonaws.com/skkodali-proserv-us-west-2/avoid-small-files-blog/cloudformation-templates/step2_iam.template"
+          "Fn::Sub": "https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-blog-avoid-small-files/cloudformation-templates/step2_iam.template"
         }
       }
     },
@@ -86,7 +86,7 @@
       "DependsOn":"STEP2",
       "Properties": {
         "TemplateURL": {
-          "Fn::Sub": "https://s3-us-west-2.amazonaws.com/skkodali-proserv-us-west-2/avoid-small-files-blog/cloudformation-templates/step3_firehose.template"
+          "Fn::Sub": "https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-blog-avoid-small-files/cloudformation-templates/step3_firehose.template"
         },
         "Parameters": {
           "Role": {
@@ -112,7 +112,7 @@
       "DependsOn":"STEP3",
       "Properties": {
         "TemplateURL": {
-          "Fn::Sub": "https://s3-us-west-2.amazonaws.com/skkodali-proserv-us-west-2/avoid-small-files-blog/cloudformation-templates/step4_kinesisstream.template"
+          "Fn::Sub": "https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-blog-avoid-small-files/cloudformation-templates/step4_kinesisstream.template"
         },
         "Parameters": {
           "Role": {
@@ -138,7 +138,7 @@
       "DependsOn":"STEP4",
       "Properties": {
         "TemplateURL": {
-          "Fn::Sub": "https://s3-us-west-2.amazonaws.com/skkodali-proserv-us-west-2/avoid-small-files-blog/cloudformation-templates/step5_emr.template"
+          "Fn::Sub": "https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-blog-avoid-small-files/cloudformation-templates/step5_emr.template"
         },
         "Parameters": {
           "EMRClusterName": {
@@ -170,7 +170,7 @@
       "DependsOn":"STEP5",
       "Properties": {
         "TemplateURL": {
-          "Fn::Sub": "https://s3-us-west-2.amazonaws.com/skkodali-proserv-us-west-2/avoid-small-files-blog/cloudformation-templates/step6_ec2_instance.template"
+          "Fn::Sub": "https://s3.amazonaws.com/aws-bigdata-blog/artifacts/aws-blog-avoid-small-files/cloudformation-templates/step6_ec2_instance.template"
         },
         "Parameters": {
           "EC2SecurityGroupId": {

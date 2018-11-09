@@ -21,7 +21,7 @@ public class IOTDeviceConsumerFromBlockingQueueToKinesisStreams implements Runna
     private int dataSize;
     Gson gson;
     private final String STREAM_NAME = "AWS-Blog-BaseKinesisStream";
-    private final String  REGION = "us-west-2";
+    private final String  REGION = "us-east-1";
     private static Charset charset = Charset.forName("UTF-8");
 
     public IOTDeviceConsumerFromBlockingQueueToKinesisStreams(BlockingQueue<IOTDevice> inputQueue)
